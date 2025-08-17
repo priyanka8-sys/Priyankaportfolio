@@ -4,7 +4,7 @@ A modern, responsive portfolio website showcasing the work and skills of Priyank
 
 ## 🚀 Live Demo
 
-Visit the portfolio: [Portfolio Website](https://priyanka8-sys.github.io/priyanka--portfolio)
+Visit the portfolio: [Priyanka's Portfolio](https://priyanka8-sys.github.io/Priyanka-Portfolio)
 
 ## ✨ Features
 
@@ -154,8 +154,8 @@ The portfolio is fully responsive and tested on:
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/priyanka8-sys/priyanka--portfolio.git
-cd priyanka--portfolio
+git clone https://github.com/priyanka8-sys/Priyanka-Portfolio.git
+cd Priyanka-Portfolio
 ```
 
 2. **Open in browser**
