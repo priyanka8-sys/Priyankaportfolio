@@ -4,233 +4,714 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio website</title>
+    <title>Priyanka Singh Sengar - Computer Science Student & Developer Portfolio - Updated</title>
+    <meta name="description" content="Priyanka Singh Sengar - Computer Science student at Maharana Pratap Engineering College. Skilled in Python, JavaScript, C++, HTML, CSS, and MySQL. View my projects and get in touch!">
+    <meta name="keywords" content="Priyanka Singh Sengar, Computer Science, Web Developer, Python, JavaScript, Portfolio, Student Developer">
+    <meta name="author" content="Priyanka Singh Sengar">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Priyanka Singh Sengar - Developer Portfolio">
+    <meta property="og:description" content="Computer Science student passionate about technology and development">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="image/Logo.PNG">
+    
+    <!-- External Resources -->
     <script src="https://kit.fontawesome.com/6140d5223c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <!-- navbar start  -->
-        <div class="container">
-            <nav>
-                <div class="logo">
-                    <h1> Priyanka's Porfolio</h1>
-                </div>
-                <ul class="menu">
-                    <li><a href="#skill_section">Skills</a></li>
-                    <li><a href="#project_section">Project</a></li>
-                    <li><a href="#education_section">Education</a></li>
-                    <li><a href="#contact_section">Contact</a></li>
-                </ul>
+    <!-- Smooth scroll to top button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
+    <header>
+        <!-- navbar start -->
+        <div class="container">
+            <nav role="navigation" aria-label="Main navigation">
+                <div class="logo">
+                    <h1>Priyanka's Portfolio</h1>
+                </div>
+                <ul class="menu" role="menubar">
+                    <li role="none"><a href="#home" role="menuitem">Home</a></li>
+                    <li role="none"><a href="#about" role="menuitem">About</a></li>
+                    <li role="none"><a href="#skills" role="menuitem">Skills</a></li>
+                    <li role="none"><a href="#projects" role="menuitem">Projects</a></li>
+                    <li role="none"><a href="#education" role="menuitem">Education</a></li>
+                    <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+                </ul>
+                <div class="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </nav>
             <!-- navbar end -->
-            <!-- hero section start  -->
-            <section class="hero_section">
-                <div class="row" id="full_row">
-                    <div class="col_hero_info">
-                        <h1>I'M <span class="animate"></span> </h1>
-                        <p>Hello! I'm priyanka singh sengar,currently persuing Btech from Maharana Pratap Engineering
-                            College.I have a solid foundation in computer science with basic knowledge in
-                            c,c++,HTML,CSS,Python and MySQL.My academic journey has equipped me with the essential
-                            technical skills and strong passion for continuous learning in the ever-evolving field of
-                            tecchnology.I'm eager to apply my skills and expand my knowledge as i move forward in my
-                            carrer.</p>
-
-
-                        <button class="btn" onclick="location.href='https://drive.google.com/file/d/1ecVnozHaqVfII9oIB_lIMiIarZmBRGAL/view?usp=sharing' ">Resume</button>
-                    </div>
-                    <div class="col_hero_img">
-                        <div class="social_icons">
-                            <a href="#"><i class="fa-brands fa-github"  onclick="location.href='https://github.com/'"></i></a>
-
-                            <a href="#"><i class="fa-brands fa-linkedin-in"
-                                    onclick="location.href='https://www.linkedin.com/feed/?linkOrigin=LI_BADGE&shareActive=true&shareUrl=https%3A%2F%2Fwww.naukri.com%2Fcode360%2Fhome%2Fleaderboards%2Fcampus%3Futm_source%3Dlinkedin%26utm_medium%3Dcode360-social%26utm_campaign%3D1d70f2ec-b177-4534-9f25-7bc2b2551fc1'"></i></a>
-                            <a href="#"><i class="fa-brands fa-whatsapp" onclick="location.href='https://web.whatsapp.com/'"></i></a>
+            
+            <!-- hero section start -->
+            <section id="home" class="hero_section">
+                <div class="hero-container">
+                    <div class="hero-content">
+                        <div class="hero-text">
+                            <p class="greeting">Hello, I'm</p>
+                            <h1 class="hero-name">
+                                <span class="animate"></span>
+                            </h1>
+                            <h2 class="hero-title">Computer Science Student & Aspiring Developer</h2>
+                            <p class="hero-description">
+                                I'm currently pursuing B.Tech in Computer Science from Maharana Pratap Engineering College. 
+                                I have a solid foundation in programming languages including C, C++, Python, JavaScript, HTML, CSS, and MySQL. 
+                                My academic journey has equipped me with essential technical skills and a strong passion for continuous learning 
+                                in the ever-evolving field of technology. I'm eager to apply my skills and expand my knowledge as I advance in my career.
+                            </p>
+                            <div class="hero-buttons">
+                                <a href="https://drive.google.com/file/d/1ecVnozHaqVfII9oIB_lIMiIarZmBRGAL/view?usp=sharing" 
+                                   class="btn primary-btn" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-download"></i> View Resume
+                                </a>
+                                <a href="#contact" class="btn secondary-btn">
+                                    <i class="fas fa-envelope"></i> Get In Touch
+                                </a>
+                            </div>
+                            <div class="social-links">
+                                <a href="https://github.com/priyanka8-sys" target="_blank" rel="noopener noreferrer" aria-label="Visit GitHub profile">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/priyanka-singh-sengar" target="_blank" rel="noopener noreferrer" aria-label="Visit LinkedIn profile">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://wa.me/918470803563" target="_blank" rel="noopener noreferrer" aria-label="Contact via WhatsApp">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="hero-image">
+                            <div class="profile-image-container">
+                                <img src="image/priyanka-new.jpg" alt="Priyanka Singh Sengar - Professional Photo" class="profile-image">
+                                <div class="profile-decoration"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
         </div>
-        <!-- hero section end  -->
+        <!-- hero section end -->
     </header>
+
     <main>
-       
-        <!-- Skill section start -->
-        <section id="skill_section" class="container">
-            <h1>My Skills</h1>
-            <div class="skill_part_one">
-                <div class="skill_card">
-                    <img src="image/1.png" alt="">
-                    <h3>Python</h3>
-                </div>
-                <div class="skill_card">
-                    <img src="image/2.png" alt="">
-                    <h3>Java Script</h3>
-                </div>
-                <div class="skill_card">
-                    <img src="image/3.png" alt="">
-                    <h3>My SQL</h3>
-                </div>
-                <div class="skill_card">
-                    <img src="image/4.png" alt="">
-                    <h3>C++</h3>
-                </div>
-                <div class="skill_card">
-                    <img src="image/5.png" alt="">
-                    <h3>C</h3>
-                </div>
-                <div class="skill_card">
-                    <img src="image/6.png" alt="">
-                    <h3>html</h3>
-                </div>
-                <div class="skill_card">
-                    <img src="image/7.png" alt="">
-                    <h3>css</h3>
-                </div>
-
+        <!-- About section start -->
+        <section id="about" class="about-section container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
             </div>
-
-        </section>
-        <!-- Skill section end -->
-        <!-- project section start  -->
-        <section id="project_section" class="container">
-            <h1>Projects</h1>
-            <div class="project_all_card">
-                <!-- card one  -->
-                <div class="project_card">
-                    <img src="image/p1.PNG" alt="">
-                    <div class="project_card_info">
-                        <h2>rock paper scissor game</h2>
-                        <p>This game is made using java programming language.</p>
-                        <a href="#" class="button" onclick="location.href='https://drive.google.com/file/d/1iQ1ofcQt3_rYyuzATUZcnCEQizm7mBJa/view?usp=sharing'">see more</a>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Passionate Computer Science Student</h3>
+                    <p>
+                        I'm a dedicated Computer Science student at Maharana Pratap Engineering College with a passion for 
+                        technology and software development. My journey in programming started with curiosity and has evolved 
+                        into a strong foundation across multiple programming languages and technologies.
+                    </p>
+                    <p>
+                        I believe in continuous learning and staying updated with the latest technological trends. 
+                        My goal is to contribute to innovative projects that make a positive impact while growing as a developer.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h4>5+</h4>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h4>7+</h4>
+                            <p>Technologies</p>
+                        </div>
+                        <div class="stat">
+                            <h4>2022-2026</h4>
+                            <p>B.Tech Duration</p>
+                        </div>
                     </div>
                 </div>
-                <!-- card two  -->
-                <div class="project_card">
-                    <img src="image/p2.PNG" alt="">
-                    <div class="project_card_info">
-                        <h2>Snake Game</h2>
-                        <p>This game is made using html ,css and java script.</p>
-                        <a href="#" class="button" onclick="location.href='https://drive.google.com/drive/folders/1w3UZD0DYWX-t3xVhh8p7PUUz4FuS8xTF?usp=sharing'">see more</a>
-                    </div>
-                </div>
-                <!-- card three  -->
-                <div class="project_card">
-                    <img src="image/p3.PNG" alt="">
-                    <div class="project_card_info">
-                        <h2>Tempreature Converter</h2>
-                        <p>This project is made using HTML,CSS and Java Script.</p>
-                        <a href="#" class="button" onclick="location.href='https://drive.google.com/drive/folders/1yA0TsNUNbQIUCwbSsMsFGGuywImW9d_r?usp=sharing'">see more</a>
-                    </div>
-                </div>
-                <!-- card four  -->
-                <div class="project_card">
-                    <img src="image/p4.PNG" alt="">
-                    <div class="project_card_info">
-                        <h2>To-do List</h2>
-                        <p>This project is made using HTML ,CSS and Java Script.</p>
-                        <a href="#" class="button"  onclick="location.href='https://drive.google.com/drive/folders/1mw0FgzwMDaUevymMF-yTTEDesQZ6C9gO?usp=sharing'">see more</a>
-                    </div>
-                </div>
-                <!-- card five  -->
-              
-                <div class="project_card">
-                    <img src="image/p6.png" alt="">
-                    <div class="project_card_info">
-                        <h2>Calculator</h2>
-                        <p>This project made using HTML,CSS and Java Script.</p>
-                        <a href="#" class="button" onclick="location.href='https://drive.google.com/drive/folders/1b3VjOwH04mgztPz7kIxCO3d0FGg8U48R?usp=sharing'">see more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="more_button">
-                <a href="#" class="more_btn">View More</a>
             </div>
         </section>
-        <!-- project section end  -->
-        <!-- education section start  -->
-        <section id="education_section">
+        <!-- About section end -->
+        <!-- Skills section start -->
+        <section id="skills" class="skills-section">
             <div class="container">
-                <h1 class="edu_title">Education</h1>
-                <!-- part one  -->
-                <div class="education">
-                    <div class="education_info">
-                        <h1>2022</h1>
-                        <div class="education_contents">
-                            <h2>Secondary schooling</h2>
-                            <div class="education_content">
-                                <h3>Kendriya vidyalaya, Mati Kanpur dehat</h3>
-                                <p>I complete my schooling from CBSE board.I got 87.2%</p>
-                            </div>
+                <div class="section-header">
+                    <h2 class="section-title">My Skills</h2>
+                    <p class="section-subtitle">Technologies I work with</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card" data-skill="Python">
+                        <div class="skill-icon">
+                            <img src="image/1.png" alt="Python programming language logo">
+                        </div>
+                        <h3>Python</h3>
+                        <p>Backend development, data analysis, and automation</p>
+                        <div class="skill-level">
+                            <div class="skill-bar" data-level="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="JavaScript">
+                        <div class="skill-icon">
+                            <img src="image/2.png" alt="JavaScript programming language logo">
+                        </div>
+                        <h3>JavaScript</h3>
+                        <p>Interactive web applications and DOM manipulation</p>
+                        <div class="skill-level">
+                            <div class="skill-bar" data-level="70"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="MySQL">
+                        <div class="skill-icon">
+                            <img src="image/3.png" alt="MySQL database logo">
+                        </div>
+                        <h3>MySQL</h3>
+                        <p>Database design, queries, and data management</p>
+                        <div class="skill-level">
+                            <div class="skill-bar" data-level="65"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="C++">
+                        <div class="skill-icon">
+                            <img src="image/4.png" alt="C++ programming language logo">
+                        </div>
+                        <h3>C++</h3>
+                        <p>Object-oriented programming and data structures</p>
+                        <div class="skill-level">
+                            <div class="skill-bar" data-level="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="C">
+                        <div class="skill-icon">
+                            <img src="image/5.png" alt="C programming language logo">
+                        </div>
+                        <h3>C</h3>
+                        <p>System programming and algorithmic thinking</p>
+                        <div class="skill-level">
+                            <div class="skill-bar" data-level="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="HTML">
+                        <div class="skill-icon">
+                            <img src="image/6.png" alt="HTML markup language logo">
+                        </div>
+                        <h3>HTML</h3>
+                        <p>Semantic markup and web structure</p>
+                        <div class="skill-level">
+                            <div class="skill-bar" data-level="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="CSS">
+                        <div class="skill-icon">
+                            <img src="image/7.png" alt="CSS styling language logo">
+                        </div>
+                        <h3>CSS</h3>
+                        <p>Responsive design and modern styling</p>
+                        <div class="skill-level">
+                            <div class="skill-bar" data-level="80"></div>
                         </div>
                     </div>
                 </div>
-                <!-- part two  -->
-                <div class="education">
-                    <div class="education_info">
-                        <h1>2022-2026</h1>
-                        <div class="education_contents">
-                            <h2>Bacholor degree in Engineering</h2>
-                            <div class="education_content">
-                                <h3>Maharana Pratap Engineering College, Kanpur</h3>
-                                <p> Currenty persuing my graduation in Bacholors in Computer science.</p>
+            </div>
+        </section>
+        <!-- Skills section end -->
+        <!-- Projects section start -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">My Projects</h2>
+                    <p class="section-subtitle">Some of my recent work</p>
+                </div>
+                <div class="projects-grid">
+                    <!-- Project Card 1 -->
+                    <article class="project-card" data-aos="fade-up">
+                        <div class="project-image">
+                            <img src="image/p1.PNG" alt="Rock Paper Scissors Game Screenshot">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://drive.google.com/file/d/1iQ1ofcQt3_rYyuzATUZcnCEQizm7mBJa/view?usp=sharing" 
+                                       target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Rock Paper Scissors project">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link" aria-label="View Rock Paper Scissors code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Rock Paper Scissors Game</h3>
+                            <p>A classic game implemented in Java with an intuitive user interface. Features include score tracking, multiple rounds, and clean game logic.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">OOP</span>
+                                <span class="tech-tag">Game Logic</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 2 -->
+                    <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-image">
+                            <img src="image/p2.PNG" alt="Snake Game Screenshot">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://drive.google.com/drive/folders/1w3UZD0DYWX-t3xVhh8p7PUUz4FuS8xTF?usp=sharing" 
+                                       target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Snake Game project">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link" aria-label="View Snake Game code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Snake Game</h3>
+                            <p>A responsive Snake game built with HTML5 Canvas, CSS3, and JavaScript. Features smooth animations, collision detection, and score tracking.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Canvas</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 3 -->
+                    <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-image">
+                            <img src="image/p3.PNG" alt="Temperature Converter Screenshot">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://drive.google.com/drive/folders/1yA0TsNUNbQIUCwbSsMsFGGuywImW9d_r?usp=sharing" 
+                                       target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Temperature Converter project">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link" aria-label="View Temperature Converter code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Temperature Converter</h3>
+                            <p>A practical web application for converting temperatures between Celsius, Fahrenheit, and Kelvin with real-time conversion and input validation.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">DOM</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 4 -->
+                    <article class="project-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-image">
+                            <img src="image/p4.PNG" alt="To-Do List Application Screenshot">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://drive.google.com/drive/folders/1mw0FgzwMDaUevymMF-yTTEDesQZ6C9gO?usp=sharing" 
+                                       target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View To-Do List project">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link" aria-label="View To-Do List code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>To-Do List Application</h3>
+                            <p>A productive task management app with features like add, edit, delete tasks, mark as complete, and local storage for data persistence.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Local Storage</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 5 -->
+                    <article class="project-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="project-image">
+                            <img src="image/p6.png" alt="Calculator Application Screenshot">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://drive.google.com/drive/folders/1b3VjOwH04mgztPz7kIxCO3d0FGg8U48R?usp=sharing" 
+                                       target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Calculator project">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link" aria-label="View Calculator code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Calculator</h3>
+                            <p>A functional calculator web application with a clean interface supporting basic arithmetic operations, decimal calculations, and keyboard input.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Math Operations</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="projects-cta">
+                    <a href="https://github.com/priyanka8-sys" target="_blank" rel="noopener noreferrer" class="btn primary-btn">
+                        <i class="fab fa-github"></i> View All Projects
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Projects section end -->
+        <!-- Education section start -->
+        <section id="education" class="education-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Education</h2>
+                    <p class="section-subtitle">My academic journey</p>
+                </div>
+                <div class="education-timeline">
+                    <!-- Education Item 1 -->
+                    <div class="education-item" data-aos="fade-right">
+                        <div class="education-date">
+                            <span class="year">2022</span>
+                        </div>
+                        <div class="education-content">
+                            <div class="education-card">
+                                <div class="education-header">
+                                    <h3>Secondary Education</h3>
+                                    <div class="education-badge">CBSE Board</div>
+                                </div>
+                                <h4>Kendriya Vidyalaya, Mati Kanpur Dehat</h4>
+                                <p>Completed secondary education with a strong academic performance, achieving 87.2% marks. Built a solid foundation in mathematics, science, and analytical thinking.</p>
+                                <div class="education-highlights">
+                                    <span class="highlight">87.2% Score</span>
+                                    <span class="highlight">Science Stream</span>
+                                    <span class="highlight">Mathematics</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education Item 2 -->
+                    <div class="education-item" data-aos="fade-left">
+                        <div class="education-date">
+                            <span class="year">2022-2026</span>
+                        </div>
+                        <div class="education-content">
+                            <div class="education-card">
+                                <div class="education-header">
+                                    <h3>Bachelor of Technology</h3>
+                                    <div class="education-badge current">Current</div>
+                                </div>
+                                <h4>Maharana Pratap Engineering College, Kanpur</h4>
+                                <p>Currently pursuing B.Tech in Computer Science Engineering. Gaining comprehensive knowledge in programming, data structures, algorithms, database management, and software engineering principles.</p>
+                                <div class="education-highlights">
+                                    <span class="highlight">Computer Science</span>
+                                    <span class="highlight">Data Structures</span>
+                                    <span class="highlight">Algorithms</span>
+                                    <span class="highlight">Software Engineering</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- education section end  -->
-       
-        <!-- contact section start  -->
-        <section class="contact" id="contact_section">
-            <div class="contact_title">
-                <h1>Contact Me</h1>
-            </div>
-            <div class="contact_info">
-                <div class="email">
-                    <i class="fa-regular fa-envelope"></i>
-                    <p>priyankasingh03122004@gmail.com</p>
+        <!-- Education section end -->
+        <!-- Contact section start -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Let's connect and collaborate</p>
                 </div>
-                <div class="phone">
-                    <i class="fa-solid fa-phone"></i>
-                    <p>+91 8470803563</p>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-text">
+                            <h3>Let's Work Together</h3>
+                            <p>I'm always interested in new opportunities and exciting projects. Whether you have a question about my work, want to discuss a potential collaboration, or just want to say hello, I'd love to hear from you!</p>
+                        </div>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Email</h4>
+                                    <a href="mailto:priyankasingh03122004@gmail.com">priyankasingh03122004@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Phone</h4>
+                                    <a href="tel:+918470803563">+91 8470803563</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Location</h4>
+                                    <span>Kanpur, Uttar Pradesh, India</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <h4>Connect with me</h4>
+                            <div class="social-icons-contact">
+                                <a href="https://github.com/priyanka8-sys" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/priyanka-singh-sengar" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://wa.me/918470803563" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Contact">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                                <a href="mailto:priyankasingh03122004@gmail.com" aria-label="Email Contact">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn primary-btn">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
                 </div>
-            </div>
-            <div class="location">
-                <i class="fa-solid fa-location-dot"></i>
-                <p>Kanpur, India</p>
-            </div>
-            <div class="footer_social_icon">
-                <a href="#"><i class="fa-brands fa-github"  onclick="location.href='https://github.com/'"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"  onclick="location.href='https://www.linkedin.com/feed/?linkOrigin=LI_BADGE&shareActive=true&shareUrl=https%3A%2F%2Fwww.naukri.com%2Fcode360%2Fhome%2Fleaderboards%2Fcampus%3Futm_source%3Dlinkedin%26utm_medium%3Dcode360-social%26utm_campaign%3D1d70f2ec-b177-4534-9f25-7bc2b2551fc1'"></i></a>
-                <a href="#"><i class="fa-brands fa-whatsapp" onclick="location.href='https://web.whatsapp.com/'"></i></a>
             </div>
         </section>
-        <!-- contact section end -->
-        <!-- footer section start  -->
-        <div class="footer">
-            <h1>"Thanks for Scorolling"</h1>
-        </div>
-        <!-- footer section end  -->
+        <!-- Contact section end -->
+
+        <!-- Footer section start -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-text">
+                        <h3>Priyanka Singh Sengar</h3>
+                        <p>Computer Science Student & Aspiring Developer</p>
+                    </div>
+                    <div class="footer-links">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#education">Education</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Priyanka Singh Sengar. All rights reserved.</p>
+                    <p>Thanks for visiting my portfolio!</p>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer section end -->
 
     </main>
 
-
+    <!-- External Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom Scripts -->
     <script>
+        // Initialize AOS (Animate On Scroll)
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Typed.js initialization
         let typed = new Typed('.animate', {
-            strings: [
-                "Priyanka singh sengar",
-            ],
+            strings: ["Priyanka Singh Sengar"],
             typeSpeed: 100,
             backSpeed: 80,
-            loop: true
+            loop: true,
+            showCursor: true,
+            cursorChar: '|'
+        });
+
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const menu = document.querySelector('.menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            menu.classList.toggle('active');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    hamburger.classList.remove('active');
+                    menu.classList.remove('active');
+                }
+            });
+        });
+
+        // Scroll to top button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Navbar background on scroll
+        const navbar = document.querySelector('nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Skill bars animation
+        const observerOptions = {
+            threshold: 0.7,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const skillBars = entry.target.querySelectorAll('.skill-bar');
+                    skillBars.forEach(bar => {
+                        const level = bar.getAttribute('data-level');
+                        bar.style.width = level + '%';
+                    });
+                }
+            });
+        }, observerOptions);
+
+        const skillsSection = document.querySelector('.skills-section');
+        if (skillsSection) {
+            observer.observe(skillsSection);
+        }
+
+        // Contact form handling
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Get form data
+                const formData = new FormData(this);
+                const name = formData.get('name');
+                const email = formData.get('email');
+                const subject = formData.get('subject');
+                const message = formData.get('message');
+                
+                // Create mailto link
+                const mailtoLink = `mailto:priyankasingh03122004@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+                
+                // Open email client
+                window.location.href = mailtoLink;
+                
+                // Show success message
+                alert('Thank you for your message! Your email client should now open with the message pre-filled.');
+                
+                // Reset form
+                this.reset();
+            });
+        }
+
+        // Add loading animation
+        window.addEventListener('load', () => {
+            document.body.classList.add('loaded');
+        });
+
+        // Parallax effect for hero section
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const heroSection = document.querySelector('.hero_section');
+            const profileImage = document.querySelector('.profile-image');
+            
+            if (heroSection && profileImage) {
+                const rate = scrolled * -0.3;
+                profileImage.style.transform = `translateY(${rate}px)`;
+            }
+            
+            // Parallax effect for profile decoration
+            const profileDecoration = document.querySelector('.profile-decoration');
+            if (profileDecoration) {
+                const decorationRate = scrolled * -0.1;
+                profileDecoration.style.transform = `translateY(${decorationRate}px)`;
+            }
         });
     </script>
-
 
 </body>
 
