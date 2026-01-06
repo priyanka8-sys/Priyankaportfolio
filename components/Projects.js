@@ -1,4 +1,10 @@
+'use client'
+
+import { useState } from 'react'
+import Folder from './Folder'
+
 export default function Projects() {
+  const [isFolderOpen, setIsFolderOpen] = useState(false);
   const projects = [
     {
       title: 'Rock Paper Scissors Game',
@@ -37,32 +43,46 @@ export default function Projects() {
     },
   ]
 
+  const folderItems = projects.slice(0, 3).map((project, index) => (
+    <div key={index} className="folder-paper-content">
+      <img src={`/${project.image}`} alt={project.title} />
+    </div>
+  ));
+
   return (
-    <section id="projects" className="projects-section-modern">
+    <section id="projects" className="projects-section-folder">
       <div className="container">
-        <div className="projects-header-modern">
+        <div className="projects-header-modern" data-aos="fade-up">
           <h2 className="projects-title-modern">Projects</h2>
+          <p className="projects-subtitle-modern">My creative work and achievements</p>
         </div>
-        <div className="projects-grid-modern">
-          {projects.map((project, index) => (
-            <div key={index} className="project-card-modern">
-              <div className="project-image-modern">
-                <img src={`/${project.image}`} alt={project.title} />
-              </div>
-              <div className="project-info-modern">
-                <h3 className="project-title-modern">{project.title}</h3>
-                <p className="project-desc-modern">{project.description}</p>
-                <div className="project-tags-modern">
-                  {project.tech.map((tech, i) => (
-                    <span key={i} className="project-tag-modern">{tech}</span>
-                  ))}
+        <div className={`projects-circular-layout ${isFolderOpen ? 'folder-open' : ''}`} data-aos="zoom-in" data-aos-delay="100">
+          <div className="projects-center-folder">
+            <Folder 
+              color="#ff8c42" 
+              size={4} 
+              items={folderItems}
+              className="projects-folder"
+              onOpenChange={setIsFolderOpen}
+            />
+          </div>
+          <div className="projects-surrounding-items">
+            {projects.map((project, index) => (
+              <div key={index} className="project-circular-item" style={{'--index': index}}>
+                <div className="project-circular-content">
+                  <h3 className="project-circular-title">{project.title}</h3>
+                  <div className="project-circular-tags">
+                    {project.tech.map((tech, i) => (
+                      <span key={i} className="project-circular-tag">{tech}</span>
+                    ))}
+                  </div>
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-circular-link">
+                    <i className="fas fa-arrow-right"></i>
+                  </a>
                 </div>
-                <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link-modern">
-                  View Project <i className="fas fa-arrow-right"></i>
-                </a>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>

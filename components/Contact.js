@@ -19,13 +19,13 @@ export default function Contact() {
   return (
     <section id="contact" className="contact-section-modern">
       <div className="container">
-        <div className="contact-header-modern">
+        <div className="contact-header-modern" data-aos="fade-up">
           <h2 className="contact-title-modern">Get In Touch</h2>
           <p className="contact-subtitle-modern">Let&apos;s create something amazing together</p>
         </div>
         
         <div className="contact-grid-modern">
-          <div className="contact-info-modern">
+          <div className="contact-info-modern" data-aos="fade-right" data-aos-delay="100">
             <div className="contact-card-modern">
               <div className="contact-icon-modern">
                 <i className="fas fa-envelope"></i>
@@ -63,7 +63,7 @@ export default function Contact() {
             </div>
           </div>
           
-          <form className="contact-form-modern" onSubmit={handleSubmit}>
+          <form className="contact-form-modern" onSubmit={handleSubmit} data-aos="fade-left" data-aos-delay="200">
             <input type="text" name="name" placeholder="Your Name" required />
             <input type="email" name="email" placeholder="Your Email" required />
             <input type="text" name="subject" placeholder="Subject" required />

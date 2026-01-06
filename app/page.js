@@ -9,6 +9,7 @@ import Education from '@/components/Education'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 import ScrollToTop from '@/components/ScrollToTop'
+import ClickSpark from '@/components/ClickSpark'
 import { useEffect } from 'react'
 
 export default function Home() {
@@ -39,6 +40,14 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
+      <ClickSpark
+        sparkColor='#ff8c42'
+        sparkSize={12}
+        sparkRadius={20}
+        sparkCount={10}
+        duration={500}
+        easing='ease-out'
+      />
     </>
   )
 }
