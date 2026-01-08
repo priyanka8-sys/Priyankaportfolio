@@ -14,11 +14,11 @@ export default function Projects() {
       link: 'https://drive.google.com/file/d/1iQ1ofcQt3_rYyuzATUZcnCEQizm7mBJa/view?usp=sharing',
     },
     {
-      title: 'Snake Game',
-      description: 'A responsive Snake game built with HTML5 Canvas and JavaScript.',
+      title: 'TUK TUK GO',
+      description: 'A responsive web using react and tailwind.',
       image: 'p2.PNG',
-      tech: ['HTML5', 'JavaScript'],
-      link: 'https://drive.google.com/drive/folders/1w3UZD0DYWX-t3xVhh8p7PUUz4FuS8xTF?usp=sharing',
+      tech: ['tailwind', 'react'],
+      link: 'https://papaya-cocada-89021b.netlify.app/',
     },
     {
       title: 'Temperature Converter',
@@ -32,14 +32,14 @@ export default function Projects() {
       description: 'Task management app with local storage for data persistence.',
       image: 'p4.PNG',
       tech: ['JavaScript', 'Storage'],
-      link: 'https://drive.google.com/drive/folders/1mw0FgzwMDaUevymMF-yTTEDesQZ6C9gO?usp=sharing',
+      link: 'https://gorgeous-profiterole-da4ad4.netlify.app/',
     },
     {
       title: 'Calculator',
       description: 'A functional calculator with clean interface and keyboard support.',
       image: 'p6.png',
       tech: ['HTML', 'JavaScript'],
-      link: 'https://drive.google.com/drive/folders/1b3VjOwH04mgztPz7kIxCO3d0FGg8U48R?usp=sharing',
+      link: 'https://lovely-eclair-f6ee68.netlify.app',
     },
   ]
 
