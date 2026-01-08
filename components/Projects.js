@@ -6,6 +6,13 @@ import Folder from './Folder'
 export default function Projects() {
   const [isFolderOpen, setIsFolderOpen] = useState(false);
   const projects = [
+     {
+      title: 'Food Delivery app',
+      description: 'Food for foodies.',
+      image: 'food.jpg',
+      tech: ['css', 'html'],
+      link: 'https://flavor-hub-connect.vercel.app/',
+    },
     {
       title: 'Portfolio Data Analyst',
       description: 'A portfolio for data analyst.',
