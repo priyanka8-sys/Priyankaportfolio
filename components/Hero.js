@@ -29,7 +29,7 @@ export default function Hero() {
             </div>
             
             <div className="hero-buttons">
-              <a href="https://docs.google.com/document/d/1zUGHLM7jj_I0_-mwPt9rkwLnTHX0t8Jd/edit?usp=sharing&ouid=114200620454333121575&rtpof=true&sd=true" className="btn-portfolio">
+              <a href="https://drive.google.com/file/d/19T_bfYot-_xHQmY2JAtaHP3ho4Eq8axW/view?usp=sharing" className="btn-portfolio">
                 resume<i className="fas fa-arrow-right"></i>
               </a>
               <a href="#contact" className="btn-hire">
