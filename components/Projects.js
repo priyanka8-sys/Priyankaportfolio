@@ -7,11 +7,11 @@ export default function Projects() {
   const [isFolderOpen, setIsFolderOpen] = useState(false);
   const projects = [
     {
-      title: 'Rock Paper Scissors Game',
-      description: 'A classic game implemented in Java with an intuitive user interface.',
+      title: 'Portfolio Data Analyst',
+      description: 'A portfolio for data analyst.',
       image: 'p1.PNG',
-      tech: ['Java', 'OOP'],
-      link: 'https://drive.google.com/file/d/1iQ1ofcQt3_rYyuzATUZcnCEQizm7mBJa/view?usp=sharing',
+      tech: ['css', 'html'],
+      link: 'https://euphonious-pithivier-e03bfd.netlify.app/',
     },
     {
       title: 'TUK TUK GO',
