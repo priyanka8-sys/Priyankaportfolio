@@ -6,11 +6,7 @@ export default function Hero() {
       <div className="hero-container">
         <div className="hero-content">
           <div className="hero-text-left">
-            <p className="hero-tagline">
-              Clean, Enfficient Code<br />
-              for your project&apos;s success.<br />
-              Trusted
-            </p>
+            
           </div>
           
           <div className="hero-center">
@@ -33,8 +29,8 @@ export default function Hero() {
             </div>
             
             <div className="hero-buttons">
-              <a href="#projects" className="btn-portfolio">
-                Portfolio <i className="fas fa-arrow-right"></i>
+              <a href="https://docs.google.com/document/d/1zUGHLM7jj_I0_-mwPt9rkwLnTHX0t8Jd/edit?usp=sharing&ouid=114200620454333121575&rtpof=true&sd=true" className="btn-portfolio">
+                resume<i className="fas fa-arrow-right"></i>
               </a>
               <a href="#contact" className="btn-hire">
                 Hire me
@@ -42,21 +38,7 @@ export default function Hero() {
             </div>
           </div>
           
-          <div className="hero-text-right">
-            <div className="experience-badge">
-              <div className="stars">
-                <i className="fas fa-star"></i>
-                <i className="fas fa-star"></i>
-                <i className="fas fa-star"></i>
-                <i className="fas fa-star"></i>
-                <i className="fas fa-star"></i>
-              </div>
-              <div className="experience-text">
-                <span className="years">Junior Years</span>
-                <span className="label">Experience</span>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </div>
     </section>

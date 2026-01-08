@@ -34,13 +34,7 @@ export default function Contact() {
               <a href="mailto:priyankasingh03122004@gmail.com">priyankasingh03122004@gmail.com</a>
             </div>
             
-            <div className="contact-card-modern">
-              <div className="contact-icon-modern">
-                <i className="fas fa-phone"></i>
-              </div>
-              <h4>Phone</h4>
-              <a href="tel:+918470803563">+91 8470803563</a>
-            </div>
+           
             
             <div className="contact-card-modern">
               <div className="contact-icon-modern">
@@ -56,9 +50,7 @@ export default function Contact() {
               </a>
               <a href="https://www.linkedin.com/in/priyanka-singh-sengar" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-linkedin-in"></i>
-              </a>
-              <a href="https://wa.me/918470803563" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-whatsapp"></i>
+             
               </a>
             </div>
           </div>

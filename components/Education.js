@@ -24,7 +24,7 @@ export default function Education() {
               </h4>
               <div className="education-details">
                 <span className="education-board"><i className="fas fa-certificate"></i> CBSE Board</span>
-                <span className="education-score-badge">87.2%</span>
+                <span className="education-score-badge">85%</span>
               </div>
             </div>
           </div>
